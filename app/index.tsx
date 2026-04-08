@@ -1,17 +1,5 @@
-import { StyleSheet, Text, View } from "react-native";
+import Orders from '../src/screens/orders';
 
 export default function Index() {
-  return (
-    <View style={styles.container}>
-      <Text>Aoba, bão?</Text>
-    </View>
-  );
+  return <Orders />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
