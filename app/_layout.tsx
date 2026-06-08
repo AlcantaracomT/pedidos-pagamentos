@@ -4,7 +4,7 @@ import { StackScreen } from "expo-router/build/layouts/stack-utils";
 export default function RootLayout() {
   return (
   <Stack>
-    <StackScreen name="index" options={{headerTitle: "Carrinho"}}/>
+    <StackScreen name="index" options={{headerTitle: "Carrinho",headerTitleAlign: "center"}}/>
   </Stack>
 );
 }

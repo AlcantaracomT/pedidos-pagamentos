@@ -11,10 +11,11 @@ export default function Botao({ title }: Props) {
 
   return (
     <TouchableOpacity
-      style={[styles.container,{ backgroundColor: ativo ? "#ff4da6" : "#D33535" }]}
+      style={[styles.button, { backgroundColor: ativo ? "#ff4da6" : "#D33535" }]}
       onPress={() => setAtivo(!ativo)}
     >
       <Text style={styles.title}>{title}</Text>
     </TouchableOpacity>
+
   );
 }

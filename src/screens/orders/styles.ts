@@ -1,18 +1,29 @@
 import { StyleSheet } from "react-native"
 
 export const styles = StyleSheet.create({
+    screen: {
+        flex: 1,
+        backgroundColor: 'white',
+    },
     container: {
         flexGrow: 1,
-        backgroundColor: 'white',
-        padding: 10,
-        paddingBottom: 30,
+        padding: 25,
+        paddingBottom: 140,
+    },
+    botaoProximoContainer: {
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        bottom: 50,
+        alignItems: 'center',
     },
     containerLoja: {
         flexDirection: 'row',
         alignItems: 'center',
-        padding: 25,
+        marginLeft: 0,
+        marginTop: 0,
         gap: 20,
-        marginBottom: 15,
+        marginBottom: 20,
     },
     containerLojaLink: {
         color: '#D33535',
@@ -29,6 +40,7 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         padding: 15,
+        paddingLeft: 0,
         marginBottom: 15,
     },
 
@@ -64,36 +76,8 @@ export const styles = StyleSheet.create({
     apagar: {
         color: 'red',
     },
-    containerCupom: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        gap: 20,
-        marginBottom: 15,
-    },
-    cupom: {
-        fontSize: 14,
-        fontWeight: '500',
-    },
-
-    containerResumo: {
-        padding: 20,
-        paddingLeft: 0,
-        marginBottom: 20,
-    },
-
-    linha: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        marginTop: 8,
-    },
-
-    h1: {
-        fontSize: 21,
-        fontWeight: 'bold',
-    },
-
-    p: {
+    mais: {
         fontSize: 18,
-        color: '#574949',
+        color: 'red',
     },
 })
