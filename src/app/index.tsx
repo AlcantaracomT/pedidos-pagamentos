@@ -1,4 +1,4 @@
-import Orders from '../src/screens/orders';
+import Orders from '../screens/orders';
 
 export default function Index() {
   return <Orders />;
