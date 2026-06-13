@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Image, Text, View } from "react-native";
 import { styles } from "../cupom/styles";
 
@@ -7,7 +8,10 @@ type Props = {
 
 const cupom = 10
 export default function Cupom({ onChange }: Props) {
-    onChange(cupom)
+    useEffect(() => {
+        onChange(cupom)
+    }, [onChange])
+
     return (
         <View style={styles.containerCupom}>
             <Image
